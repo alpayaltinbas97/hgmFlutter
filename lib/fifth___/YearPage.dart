@@ -255,17 +255,17 @@ class UserTile extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    width: 150,
+                  Expanded(
+                    flex: 3,
                     child: Container(
-                      margin: EdgeInsets.only(top:30,bottom:20,left:2,right:2),
+                      margin: EdgeInsets.only(top:30,bottom:20),
                       child: Text(user.value1+'\n\n',style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 0.9),
                         textAlign: TextAlign.center,
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 100,
+                  Expanded(
+                    flex: 3,
                     child: Container(
                       margin: EdgeInsets.only(top:30,bottom:20),
                       child: Text(user.value2,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 0.9),
@@ -273,8 +273,8 @@ class UserTile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 50,
+                  Expanded(
+                    flex: 1,
                     child: Container(
                       margin: EdgeInsets.only(top:30,bottom:30),
                       child: Text(user.issue,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 0.9),
@@ -282,8 +282,8 @@ class UserTile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 30,
+                  Expanded(
+                    flex: 2,
                     child: Container(
                       margin: EdgeInsets.only(top:30,bottom:30),
                       child: Text(user.year,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 0.9),
@@ -291,10 +291,10 @@ class UserTile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 35,
+                  Expanded(
+                    flex: 1,
                     child : Container(
-                      margin: EdgeInsets.only(left:2,top:30,bottom:30),
+                      margin: EdgeInsets.only(top:30,bottom:30),
                       child : Image.asset(
                         'assets/pdf.png',
                         width: 35,
