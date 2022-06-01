@@ -6,6 +6,17 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+/*
+öncelikle dergi arşivinin verilerini json formatında sunucudan alıyoruz.
+ThirdScreen class ı içerisinde bulunan widget PhotosList adında bir class aracılığı ile veri bulduğu takdirde görüntüleme yapmaktadır.
+PhotosList class ında ise json olarak aldığımız ve arraylist olarak kullandığımız verileri sayısına göre ekrana görüntülüyoruz.
+görüntüleme işlemini card yapısıyla sağlıyoruz, bu card içerisinde text ve image dosyası bulunmakta.
+onTap methoduyla da bu itemlara tıklandığı takdirde gerekli pdf e yönlendirmeyi yapıyoruz.
+bu pdf yönlendirmesi yine pdfviewer kütüphanesi sayesinde oluyor.
+builder: (context) => pdfOpener(a:value[index].name + "-" + value[index].id + ".pdf",) kodunda görüldüğü üzere pdf linkini o item özelinde oluşturuyoruz.
+oluşturduğumuz bu pdf linki her item için kendine özel olmuş oluyor, bu sayede hangi item a tıklarsak o itemin üzerinde yazan bilgilere sahip pdf dosyası açılıyor.
+ */
+
 Future<List<Photo>> fetchPhotos(http.Client client) async {
   final response = await client
       .get(Uri.parse('https://www.harita.gov.tr/api2/get_archive_data.php'));

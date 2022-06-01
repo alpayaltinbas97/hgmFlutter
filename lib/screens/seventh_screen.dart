@@ -3,6 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/Seventh__/Science.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+/*
+sixth_screen.dart ile aynı mantık.
+Seventh__/Science.dart içerisinden gelen bilgiler ile çalışmaktadır.
+ */
+
 void main() {
   runApp(const MyApp());
 }

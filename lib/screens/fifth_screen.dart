@@ -4,7 +4,13 @@ import 'package:flutter_app/fifth___/ArticlePage.dart';
 import 'package:flutter_app/fifth___/AuthorPage.dart';
 import 'package:flutter_app/fifth___/IssuePage.dart';
 import 'package:flutter_app/fifth___/YearPage.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+/*
+makale sorgulama çerçevesini oluşturduğumuz sayfa.
+main.dart içerisindeki yapıya benzer bir yapı var ancak bu sefer navigation bar yerine tabbar mevcut.
+tabbar ile üst kısımdan ihtiyacımız olan arama yöntemini seçiyoruz ve arama yöntemine göre hizmet eden sayfa ekranın orta kısmında görüntüleniyor.
+bu sayfada kullanılan alt sayfalar fifth___ alt klasörü içerisindeler.
+ */
 
 void main() {
   runApp(const MyApp());

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+/*
+import kısmında görebileceğimiz pdfviewer kütüphanesi ile bir widget oluşturarak,
+dergi son sayısını pdf linki ile pdf görüntülüyoruz.
+ */
+
 void main() {
   runApp(MaterialApp(
     title: 'Son Sayı',

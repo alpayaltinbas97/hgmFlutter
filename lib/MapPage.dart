@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+
+/*
+konum kısmında kurumun lokasyonunu gösteren bir image dosyası ve text bulunmaktadır.
+body kısmında image ve text bulunduran widget sırayla çağrılmış ve görüntüleme oluşturulmuştur.
+ */
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -47,7 +50,9 @@ class MapPage extends StatelessWidget {
       ),
     );
 
-
+/*
+görüntüleme yapan kısım.
+ */
     return MaterialApp(
       home: Scaffold(
         body: ListView(

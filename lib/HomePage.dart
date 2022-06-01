@@ -10,6 +10,11 @@ import 'screens/seventh_screen.dart';
 import 'screens/sixth_screen.dart';
 import 'screens/third_screen.dart';
 
+/*
+harita sitesindeki harita dergisi layout a göre oluşturulmuş menülerin bulunduğu anasayfa burasıdır.
+bu menüler seçildiği takdirde gerekli sayfanın class ını çağırıp onu görüntülemektedir.
+ */
+
 void main() {
   runApp(
     MyApp(),

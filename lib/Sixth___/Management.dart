@@ -4,6 +4,10 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
+/*
+Json verileri ile aldýðýmýz bilgileri görselleþtiriyoruz.
+bu bilgileri ise sixth_screen.dart içerisinde kullanýyoruz.
+ */
 
 Future<List<Photo>> fetchPhotos(http.Client client) async {
   final response = await client

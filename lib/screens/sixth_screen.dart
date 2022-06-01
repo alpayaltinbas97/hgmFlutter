@@ -4,6 +4,12 @@ import 'package:flutter_app/screens/seventh_screen.dart';
 import 'package:flutter_app/sixth___/Management.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+/*
+bu sayfada dergi yönetim kurulunun bilgileri mevcut.
+body kısmı Sixth___/Management.dart içerisinde oluşturulmakta.
+Appbar kısmında datatable benzeri bir yapı oluşturulmuştur ve bu sayede düzenli bir şekilde verilerin görüntülenmesi sağlanmıştır.
+ */
+
 void main() {
   runApp(const MyApp());
 }

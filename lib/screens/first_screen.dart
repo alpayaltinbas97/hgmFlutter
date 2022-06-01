@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+/*
+yayın ilkelerinin bulunduğu basit bir text sayfası.
+başlık ve paragraf sırasına göre widgetlar oluşturulup sıralanmaktadır.
+ */
+
 void main() {
   // debugPaintSizeEnabled = true;
   runApp(const FirstScreen());

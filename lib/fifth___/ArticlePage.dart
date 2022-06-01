@@ -7,6 +7,16 @@ import 'package:http/http.dart' as http;
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
+/*
+third_screen.dart içerisindeki pdf görüntüleyici ve json verilerini aldığımız yöntemin neredeyse aynısı burada da mevcut.
+farklı olarak search yapmamıza olanak sağlayan bir altyapı var.
+return index == 0 ? _searchBar() : UserTile(user: this._usersDisplay[index - 1]); kodundaki mantıksal algoritma,
+searchbar içerisine yazdığımız veriye göre itemların sıralanmasını sağlıyor.
+herhangi bir yazı yazılmadığı takdirde bütün itemlar zaten görüntülenmekte ancak searchbar ile filtreleme yapılmaktadır.
+bu sayfada makale ismine göre arama yapılıyor.
+AuthorPage.dart yazara göre, IssuePage yayınlandığı sayıya göre, YearPage yayınlandığı yıla göre arama yapmaktadır ve bu sayfaların arasındaki fark sadece arama algoritmasıdır.
+ */
+
 final String url = "https://www.harita.gov.tr/api2/get_article_data.php";
 
 List<Photo> parseUser(String responseBody){

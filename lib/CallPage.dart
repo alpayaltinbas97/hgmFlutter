@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+
+/*
+iletişim bilgileri sayfasında basitçe text ve image bulunmaktadır.
+widgetlar isimlendirilerek textler özelleştirilmiştir.
+body kısmında listview ile beraber bu widgetlar sıralarına göre görüntülenmektedir.
+ */
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -38,8 +42,6 @@ class CallPage extends StatelessWidget {
         ],
       ),
     );
-
-    Color color = Theme.of(context).primaryColor;
 
     Widget textSection1 = const Padding(
       padding: EdgeInsets.all(5),

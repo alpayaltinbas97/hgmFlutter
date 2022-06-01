@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+/*
+second_screen.dart ile ikiz sayfalar.
+ */
+
 void main() {
   runApp(MaterialApp(
     title: 'Makale Yazım Şablonu',

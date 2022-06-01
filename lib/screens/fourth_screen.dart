@@ -6,6 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+/*
+third_screen.dart içerisinde yazdıklarımın aynısı bu class için de geçerli.
+orada uyguladıklarımızın aynısını burada da uyguluyoruz.
+ikiz classlar da denebilir.
+ */
+
 Future<List<Photo>> fetchPhotos(http.Client client) async {
   final response = await client
       .get(Uri.parse('https://www.harita.gov.tr/api2/get_special_data.php'));
