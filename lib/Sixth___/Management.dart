@@ -93,8 +93,8 @@ class PhotosList extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
-                  width: 120,
+                Expanded(
+                  flex: 4,
                   child: Container(
                     padding: EdgeInsets.only(top: 20),
                     child: Text(value[index].gorev,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),
@@ -102,8 +102,8 @@ class PhotosList extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 120,
+                Expanded(
+                  flex: 4,
                   child: Container(
                     padding: EdgeInsets.only(top: 20),
                     child: Text(value[index].rutbe,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),
@@ -111,8 +111,8 @@ class PhotosList extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 120,
+                Expanded(
+                  flex: 4,
                   child: Container(
                     padding: EdgeInsets.only(top: 20),
                     child: Text(value[index].ad,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),

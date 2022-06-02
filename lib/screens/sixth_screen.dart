@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/screens/seventh_screen.dart';
-import 'package:flutter_app/sixth___/Management.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_app/Sixth___/Management.dart';
 
 /*
 bu sayfada dergi yönetim kurulunun bilgileri mevcut.
@@ -47,30 +47,27 @@ class SixthScreen extends StatelessWidget {
           color: Colors.grey[350],
           child:Row(
           children:[
-            SizedBox(
-              width: 120,
+            Expanded(
+              flex: 4,
               child: Container(
-                padding: EdgeInsets.only(left: 50),
                 child: Tab(
                   icon: Icon(FontAwesomeIcons.clipboardCheck, color: Colors.black),
                   text: 'Görevi',
                 ),
                 ),
               ),
-            SizedBox(
-              width: 120,
+            Expanded(
+              flex: 3,
               child: Container(
-                padding: EdgeInsets.only(left: 50),
                 child: Tab(
                   icon: Icon(FontAwesomeIcons.personMilitaryPointing, color: Colors.black),
                   text: 'Rütbesi',
                 ),
               ),
             ),
-            SizedBox(
-            width: 120,
+            Expanded(
+            flex: 4,
             child: Container(
-              padding: EdgeInsets.only(left: 50),
               child: Tab(
                 icon: Icon(FontAwesomeIcons.idCard, color: Colors.black),
                 text: 'Adı',
