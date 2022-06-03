@@ -247,7 +247,6 @@ class UserTile extends StatelessWidget {
         InkWell(
         splashColor: Colors.white,
         onTap: () {
-          print(user.name + "-" + user.id + ".pdf");
           Navigator.push(
             context,
             MaterialPageRoute(
