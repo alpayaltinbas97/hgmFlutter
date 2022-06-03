@@ -85,15 +85,14 @@ class PhotosList extends StatelessWidget {
         return InkWell(
           splashColor: Colors.white,
           child : Card(
-            margin: EdgeInsets.all(10),
             color: Colors.grey[350],
             shadowColor: Colors.black,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
-                  width: 80,
+                Expanded(
+                  flex: 4,
                   child: Container(
                     padding: EdgeInsets.only(top: 20),
                     child: Text(value[index].unvan,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),
@@ -101,28 +100,28 @@ class PhotosList extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 90,
+                Expanded(
+                  flex: 5,
                   child: Container(
-                    padding: EdgeInsets.only(top: 20, left: 4,right: 4),
+                    padding: EdgeInsets.only(top: 20),
                     child: Text(value[index].ad,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),
                       textAlign: TextAlign.center,
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 90,
+                Expanded(
+                  flex: 5,
                   child: Container(
-                    padding: EdgeInsets.only(top: 20, left: 4,right: 4),
+                    padding: EdgeInsets.only(top: 20),
                     child: Text(value[index].kurum,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),
                       textAlign: TextAlign.center,
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 90,
+                Expanded(
+                  flex: 5,
                   child: Container(
-                    padding: EdgeInsets.only(top: 20, left: 4,right: 4),
+                    padding: EdgeInsets.only(top: 20),
                     child: Text(value[index].bransi,style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),
                       textAlign: TextAlign.center,
                     ),

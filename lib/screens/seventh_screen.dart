@@ -47,39 +47,40 @@ class SeventhScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children:[
-                SizedBox(
-                  width: 90,
+                Expanded(
+                  flex: 4,
                   child: Container(
+                    padding: EdgeInsets.only(left: 5),
                     child: Tab(
                       icon: Icon(FontAwesomeIcons.briefcase, color: Colors.black),
                       text: 'Ünvanı',
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 90,
+                Expanded(
+                  flex: 5,
                   child: Container(
-                    padding: EdgeInsets.only(right: 8),
+                    padding: EdgeInsets.only(left: 2),
                     child: Tab(
                       icon: Icon(FontAwesomeIcons.idCard, color: Colors.black),
                       text: 'Adı',
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 90,
+                Expanded(
+                  flex: 5,
                   child: Container(
-                    padding: EdgeInsets.only(right: 10),
+                    padding: EdgeInsets.only(right: 2),
                     child: Tab(
                       icon: Icon(FontAwesomeIcons.institution, color: Colors.black),
                       text: 'Kurumu',
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 90,
+                Expanded(
+                  flex: 5,
                   child: Container(
-                    padding: EdgeInsets.only(right: 6),
+                    padding: EdgeInsets.only(right: 5),
                     child: Tab(
                       icon: Icon(FontAwesomeIcons.codeBranch, color: Colors.black),
                       text: 'Branşı',
