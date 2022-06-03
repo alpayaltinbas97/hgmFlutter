@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/screens/seventh_screen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_app/Sixth___/Management.dart';
+import 'package:flutter_app/sixth___/Management.dart';
 
 /*
 bu sayfada dergi yönetim kurulunun bilgileri mevcut.
