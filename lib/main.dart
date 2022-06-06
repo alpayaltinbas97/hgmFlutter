@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'CallPage.dart';
 import 'HomePage.dart';
 import 'MapPage.dart';
-import 'package:device_preview/device_preview.dart';
 
 /* main üç bölümden oluşuyor, iletişim, anasayfa ve konum.
 bottom navigation bar içerisindeki 3 button arasından seçtiğimiz button bir index değerine sahip,

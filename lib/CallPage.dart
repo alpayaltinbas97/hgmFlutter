@@ -41,7 +41,6 @@ class CallPage extends StatelessWidget {
         ],
       ),
     );
-
     Widget textSection1 = const Padding(
       padding: EdgeInsets.all(5),
       child: Text(
@@ -56,8 +55,8 @@ class CallPage extends StatelessWidget {
     Widget textSection2 = const Padding(
       padding: EdgeInsets.all(5),
       child: SelectableText(
-        'Tel: 0 312 595 21 21 - 21 20 \n'
-            'Fax: 0 312 320 14 95 \n'
+        'Tel: +90 (312) 595 21 21 - 21 20 \n'
+            'Fax: +90 (312) 320 14 95 \n'
         'haritadergisi@harita.gov.tr \n',
         style: TextStyle(
           color: Colors.black,
@@ -78,8 +77,7 @@ class CallPage extends StatelessWidget {
     Widget textSection4 = const Padding(
       padding: EdgeInsets.all(5),
       child: SelectableText(
-        '0 312 595 20 72 \n'
-            '0 312 595 23 28\n',
+        'Tel: +90 (312) 595 20 72 - 23 28 \n',
         style: TextStyle(
           color: Colors.black,
           fontSize: 16,
@@ -99,7 +97,7 @@ class CallPage extends StatelessWidget {
     Widget textSection6 = const Padding(
       padding: EdgeInsets.all(5),
       child: SelectableText(
-            '0 312 595 23 28\n',
+            'Tel: +90 (312) 595 23 28\n',
         style: TextStyle(
           color: Colors.black,
           fontSize: 16,
