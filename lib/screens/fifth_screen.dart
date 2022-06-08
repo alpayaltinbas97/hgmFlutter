@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_app/fifth___/ArticlePage.dart';
-import 'package:flutter_app/fifth___/AuthorPage.dart';
-import 'package:flutter_app/fifth___/IssuePage.dart';
-import 'package:flutter_app/fifth___/YearPage.dart';
+import 'package:harita_dergisi/fifth___/ArticlePage.dart';
+import 'package:harita_dergisi/fifth___/AuthorPage.dart';
+import 'package:harita_dergisi/fifth___/IssuePage.dart';
+import 'package:harita_dergisi/fifth___/YearPage.dart';
 
 /*
 makale sorgulama çerçevesini oluşturduğumuz sayfa.
