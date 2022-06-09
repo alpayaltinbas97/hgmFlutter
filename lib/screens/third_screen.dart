@@ -120,7 +120,6 @@ class PhotosList extends StatelessWidget {
         return InkWell(
           splashColor: Colors.white,
           onTap: () {
-            print(value[index].name + "-" + value[index].id + ".pdf");
             Navigator.push(
               context,
               MaterialPageRoute(
