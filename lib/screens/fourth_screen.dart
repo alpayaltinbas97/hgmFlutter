@@ -190,7 +190,7 @@ class PDFViewerCachedFromUrl extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Makaleler'),
+        title: const Text('Özel Sayılar'),
         backgroundColor: Colors.grey,
         actions: <Widget>[
           StreamBuilder<String>(

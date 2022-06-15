@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'CallPage.dart';
 import 'HomePage.dart';
 import 'MapPage.dart';
@@ -10,8 +9,6 @@ bottom navigation bar içerisindeki 3 button arasından seçtiğimiz button bir 
 index değeri neyse o class görüntüleniyor.
  */
 void main() {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp(const MyApp());
 }
 
@@ -34,13 +31,6 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  void initState() {
-    super.initState();
-    initialization();
-  }
-  void initialization() async {
-    FlutterNativeSplash.remove();
-  }
   int _selectedIndex = 1;
   final List<Widget> _widgetOptions = [
     CallPage(),
