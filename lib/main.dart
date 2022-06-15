@@ -41,7 +41,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   void initialization() async {
     FlutterNativeSplash.remove();
   }
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
   final List<Widget> _widgetOptions = [
     CallPage(),
     HomePage(),

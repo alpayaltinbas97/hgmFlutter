@@ -422,11 +422,11 @@ class PDFViewerCachedFromUrl extends StatelessWidget {
                             onChanged: (value) async{
                               final PDFViewController pdfController = snapshot.data!;
                               var one = int.parse(myController.text);
-                              final int currentPage = one;
+                              final int currentPage = one-1;
                               final int? pageCount = await pdfController.getPageCount();
                               var pageCounter = int.parse(pageCount.toString());
                               if (currentPage >= 0 && currentPage<pageCounter) {
-                                pdfController.setPage(currentPage-1);
+                                pdfController.setPage(currentPage);
                               }
                               else {
                                 await ScaffoldMessenger.of(context).showSnackBar(SnackBar(
